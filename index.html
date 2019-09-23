@@ -2,15 +2,64 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Project Tabula</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/bulma.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
 </head>
 
 <body>
-    <h1>23</h1>
-    <p>MPH</p>
+    <section class="section">
+        <div class="columns">
+            <div class="column is-one-fifth">
+                <div class="has-text-centered">
+                    <h1 id="speedometer" class="title is-1">100</h1>
+                    <h5 class="subtitle is-5">km/h</h5>
+                </div>
+                <div class="is-pulled-left">
+                    <img id="autopilot" class="animated fadeIn is-pulled-left" src="img/Autopilot.png">
+                </div>
+                <div class="is-pulled-right">
+                    <i class="fas fa-battery-three-quarters fa-2x" aria-hidden="true"></i>
+                    <h5 id="battery" class="subtitle is-5">10 V</h5>
+                </div>
+            </div>
+            <div class="column">
+                <h1 class="title is-2">Motor Tuner</h1>
+                <canvas id="myChart"></canvas>
+            </div>
+            <div class="column">
+                <h1 class="title is-2">Camera</h1>
+                <img src="img/254.png" id="camera">
+            </div>
+        </div>
+        <div class="container">
+
+        </div>
+    </section>
+
+    <nav class="navbar is-black is-fixed-bottom" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item  is-size-5" href="index.html">Project Tabula</a>
+        </div>
+
+        <div class="navbar-menu">
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <a class="settings"></a><i id="nav-icon" class="fas fa-cog fa-lg" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js/bulma-toast.min.js"></script>
+    <script defer src="js/fontawesome.js"></script>
+    <script src="js/Chart.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
