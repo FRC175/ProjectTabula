@@ -1,3 +1,3 @@
-# FRC2019
+# Tabula
 
-A simple, elegant, and beautiful dashboard for FRC.
+A superior FRC dashboard.
