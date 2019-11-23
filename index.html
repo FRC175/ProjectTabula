@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/animate.min.css">
 </head>
 
-<body>
+<body onload="init();">
     <section class="section">
         <div class="columns">
             <div class="column is-one-fifth">
@@ -27,8 +27,12 @@
                 </div>
             </div>
             <div class="column">
-                <h1 class="title is-2">Motor Tuner</h1>
-                <canvas id="myChart"></canvas>
+                <div class="has-text-centered">
+                    <!-- <h1 class="title is-2">Motor Tuner</h1> -->
+                    <!-- <canvas id="myChart"></canvas> -->
+                    <h1 class="title is-2">Field Position System</h1>
+                    <canvas id="field"></canvas>
+                </div>
             </div>
             <div class="column">
                 <h1 class="title is-2">Camera</h1>
@@ -42,14 +46,19 @@
 
     <nav class="navbar is-black is-fixed-bottom" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
-            <a class="navbar-item  is-size-5" href="index.html">Project Tabula</a>
+            <a class="navbar-item is-size-5" href="index.html">Project Tabula</a>
         </div>
 
         <div class="navbar-menu">
+            <div class="navbar-start">
+
+            </div>
+
             <div class="navbar-end">
-                <div class="navbar-item">
-                    <a class="settings"></a><i id="nav-icon" class="fas fa-cog fa-lg" aria-hidden="true"></i></a>
-                </div>
+                <!-- <div class="navbar-item"> -->
+                <a class="navbar-item" id="play"><i id="navbar-icon" class="fas fa-play-circle fa-lg" aria-hidden="true"></i></a>
+                <a class="navbar-item" id="stop"><i id="navbar-icon" class="fas fa-stop-circle fa-lg" aria-hidden="true"></i></a>
+                <!-- </div> -->
             </div>
         </div>
     </nav>
